@@ -20,6 +20,9 @@ int main(){
     printf("O perimetro é: %.2f\n", *pPerimetro);
     printf("A area é: %.2f\n", *pArea);
     
+    free(pPerimetro);
+    free(pArea);
+
     return 0;
 }
 

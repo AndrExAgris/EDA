@@ -29,6 +29,10 @@ int main(){
     printf("O menor valor é: %d\n", *pMin);
     printf("O maior valor é: %d\n", *pMax);
     
+    free(pMax);
+    free(pMin);
+
+    return 0;
 }
 
 void max_min(int vet[], int tam, int *pMin, int *pMax){

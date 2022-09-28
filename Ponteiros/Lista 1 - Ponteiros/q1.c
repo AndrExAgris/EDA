@@ -24,6 +24,9 @@ int main(){
 
     printf("Os valores agora são: %.2f e %.2f\n", *xp, *yp);
 
+    free(xp);
+    free(yp);
+    
     return 0;
 }
 

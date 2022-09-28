@@ -20,6 +20,9 @@ int main(){
 
     printf("Agora é %2d:%2d\n", *ph, *pm);
     
+    free(ph);
+    free(pm);
+
     return 0;
 }
 
