@@ -8,27 +8,34 @@ char *repetidor( char *s, int n );
 int main(){
 
     int rep;
-    char str[20];
+    char str[50];
 
     printf("Digite a string: \n");
     scanf("%s", str);
 
     printf("Digite quantas vezes sera repetida: \n");
-    scanf("%d", rep);
+    scanf("%d", &rep);
 
-    char strrep[] = repetidor( str, rep );
+    char *strrep = repetidor( str, rep );
 
-    
+    printf("A string ficou:\n%s\n", strrep);
+
+    free(strrep);
+
+    return 0;    
 }
 
 char *repetidor( char *s, int n ){
     
-    float *vClone = malloc(sizeof(float) * n);
+    char *vRep = malloc(sizeof(s) * n);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < (n*strlen(s)); i+=strlen(s))
     {   
-        vClone[i] = v[i];
+        for(int j = 0; j < strlen(s); j++){
+            vRep[(i+j)] = s[(j)];
+        }
     }
 
-    return vClone;
+    return vRep;
+    free(vRep);
 }

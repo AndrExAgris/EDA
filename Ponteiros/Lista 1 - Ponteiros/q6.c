@@ -41,4 +41,5 @@ float *clone( float *v, int n ){
     }
 
     return vClone;
+    free(vClone);
 }
