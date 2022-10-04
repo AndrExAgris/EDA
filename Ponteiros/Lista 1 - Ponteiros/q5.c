@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <math.h>
 
 void max_vetor(float vet[], int tam, float *pMax, int *pIndice);
 

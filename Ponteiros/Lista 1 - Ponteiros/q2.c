@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 void calcula_circulo(float raio, float *pPerimetro, float *pArea);
 
