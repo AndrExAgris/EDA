@@ -31,6 +31,9 @@ int main(){
     }
     printf("\n ");
 
+    free(vet);
+
+    return 0;
 }
 
 
@@ -59,5 +62,5 @@ float *maiorMed( float *vet, int n){
     }
 
     return newVet;
-
+    free(newVet);
 }
