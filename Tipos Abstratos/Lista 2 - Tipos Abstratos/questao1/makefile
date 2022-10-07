@@ -6,6 +6,3 @@ final: main.c Ponto.o
 
 Ponto.o: Ponto.c Ponto.h
 	gcc -o Ponto.o Ponto.c -c -lm
-
-att:
-	sudo apt upgrade

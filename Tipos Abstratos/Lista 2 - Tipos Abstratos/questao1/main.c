@@ -4,16 +4,7 @@
 #include "Ponto.h"
 
 int main(int argc, char *argv[]) {
-	/*
-	Ponto p1, p2;
-	
-	inicializa_ponto( &p1, 1, 1 );
-	inicializa_ponto( &p2, 0, 0 );
-	mostra_ponto( p1 );
-	mostra_ponto( p2 );
-	printf("Distancia: %f\n", calcula_distancia( p1, p2) );
-	*/
-	
+
 	int n, i;
 	printf("Quantos pontos? ");
 	scanf("%d", &n);
