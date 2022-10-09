@@ -22,7 +22,6 @@ int main(){
             scanf("%d", &(&mat)->dados[i][j] );
         }
     }	
-    mostra_matriz(mat); //temp
 
     scanf("%d", &init);
 
@@ -48,28 +47,14 @@ int main(){
             for(int i = 0 ; i < p; i++ ){
                if(mat.dados[x-1][i] == 1){
                     if(vs[i]==0){
-                        empilha(&pil, i);
+                        empilha(&pil, i+1);
                     }
                }
             }
         }
-        
-
-        
-
-
-
-
-
     }
 
-
-
-
-
-
-
-
+    free(vs);
     libera_matriz(&mat);
     return 0;
 }
