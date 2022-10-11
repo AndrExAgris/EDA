@@ -1,5 +1,5 @@
 run: final
-	./final 
+	./final < in
 
 final: main.c Matriz.o Pilha.o
 	gcc -o final main.c Matriz.o Pilha.o -lm
