@@ -3,10 +3,6 @@
 #include "Matriz.h"
 #include "Pilha.h"
 
-//declaracoes de funcoes
-
-
-//codigo principal
 
 int main(){
 
@@ -58,5 +54,3 @@ int main(){
     libera_matriz(&mat);
     return 0;
 }
-
-//codigo das funcoes declaradas

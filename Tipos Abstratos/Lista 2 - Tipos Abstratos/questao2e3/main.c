@@ -29,8 +29,10 @@ int main(int argc, char *argv[]) {
 	}
 	libera_matriz( &a );
 	libera_matriz( &b );	
-	
 	/*
+	
+	Matriz m;
+
 	inicializa_matriz( &m , 4, 5 );
 	mostra_matriz( m );
 	set_valor( &m, 0, 2, 6 );
